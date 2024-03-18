@@ -13,10 +13,14 @@
 body {
     background-color: #d3d4d0;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     font-family: 'Montserrat';
+    display: block;
 }
+
+
 /* estilos de header */
+
 header{
   background-color: #4e5242;
   color: #d3d4d0;
@@ -28,17 +32,17 @@ header{
   align-items: center;
 }
 
-header img{
-    width: 15%;
-
-
+.logo{
+    width: 10%;
 }
 
 .nav-lista{
-    position: relative;
     list-style: none;
+
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
        
 }
 .nav-lista li a{
@@ -49,10 +53,23 @@ header img{
    
 /* estilos de main */
 main{
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 
 }
+.background-1{
+    height: 800px;
+    background: url('../img/TSLjuliojoao.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
 main div div a{
     list-style: none;
     text-decoration: none;
@@ -64,34 +81,67 @@ img{
 }
 
 .portada{
-    color: #d3d4d0;
-    position: absolute;
-    top: 300px;
 
+    color: #d3d4d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.portada h1{
-    margin: 50px;
+p {
+    padding: 0px 200px;
+    font-size: 20px;
+    text-align: center;
+
+}
+div div .boton{
+
+    background-color: #4e5242;
+    color: #d3d4d0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
+div div .boton a{
+    color: #d3d4d0;
 }
 
 /* estilos de footer */
 footer{
+    padding: 10px;
     background-color: #4e5242;
     color: #d3d4d0;
 
-    display: block;
-    flex-wrap: wrap ;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 
 }
+
 footer ul{
-    list-style: none;
     text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;  
 }
 
 footer ul li a{
+
     text-decoration: none;
     color: #d3d4d0;
+}
+
+footer p{
+    font-size: 16px;
 }
 
 
