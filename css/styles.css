@@ -7,49 +7,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* estilos generales*/
 body {
+    font-family: 'Montserrat', Roboto, sans-serif;
     background-color: #d3d4d0;
     text-align: center;
     font-size: 16px;
-    font-family: 'Montserrat';
-    display: block;
+    
 }
 
-
 /* estilos de header */
+.container{
+    background-color: #4e5242;
+    
 
-header{
-  background-color: #4e5242;
-  color: #d3d4d0;
-  margin: 0px;
-  padding: 0px 50px;
+}
+.header{
+    background-color: #4e5242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    border-bottom: 1px solid black;  
+}
+.menu{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #4e5242;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo{
     width: 10%;
 }
 
-.nav-lista{
-    list-style: none;
-
+.menu .navbar ul li{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-       
+    display: inline;
 }
-.nav-lista li a{
-    text-decoration: none;
+.menu .navbar ul li a{
+    font-size: 16px;
+    padding: 15px;
     color: #d3d4d0;
+    text-decoration: none;
+}
+.menu .navbar ul li a:hover{
+    color: black;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
 }
 
+.menu label {
+    display: none;
+    cursor: pointer;
+}
    
 /* estilos de main */
 main{
@@ -59,8 +85,9 @@ main{
     text-align: center;
 
 }
+
 .background-1{
-    height: 800px;
+    min-height: 90vh;
     background: url('../img/TSLjuliojoao.jpg');
     background-repeat: no-repeat;
     background-position: center top;
@@ -89,27 +116,47 @@ img{
     align-items: center;
 }
 
-p {
-    padding: 0px 200px;
+.portada h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.portada p {
+    margin: 0px 100px;
+    padding: 0px 50px;
     font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 80px black;
     text-align: center;
+    margin-bottom: 35px;
 
 }
-div div .boton{
+.boton{
 
     background-color: #4e5242;
     color: #d3d4d0;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 35px;
     border-radius: 5px;
-
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
     display: inline-block;
     justify-content: center;
     align-items: center;
-
+    text-transform: uppercase;
 }
-div div .boton a{
+.boton:hover{
+    background-color: #747C6C;
+}
+
+.boton a{
     color: #d3d4d0;
+}
+
+.boton a:hover{
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 /* estilos de footer */
@@ -142,6 +189,42 @@ footer ul li a{
 
 footer p{
     font-size: 16px;
+}
+
+@media(max-width:991px){
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #5C6254;
+        display: none;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~.navbar{
+        display: initial;
+    }
 }
 
 
