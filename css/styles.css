@@ -194,9 +194,6 @@ footer p{
 @media(max-width:991px){
 
     .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         padding: 20px;
     }
 
@@ -207,12 +204,17 @@ footer p{
     
     .menu .navbar {
         position: absolute;
-        top: 0;
+        top: 65px;
         left: 0;
         right: 0;
         background-color: #5C6254;
         display: none;
     }
+
+    .navbar{
+        position: relative;
+    }
+
     .navbar ul{
         display: flex;
         flex-direction: column;
@@ -220,9 +222,11 @@ footer p{
 
     .menu .navbar ul li{
         width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid black;
     }
 
-    #menu:checked ~.navbar{
+    #menu:checked ~ .navbar{
         display: initial;
     }
 }
