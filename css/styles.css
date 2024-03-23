@@ -241,45 +241,36 @@ main{
     box-shadow: 1px 1px 50px rgb(52, 50, 50);
 
     display: flex;
+    
     justify-content: center; 
     align-items: center; 
 }
 .sb-1 div{
     background-color: #4e5242;
-    margin: 10px;
-    padding: 50px;
+    margin: 0;
+    padding: 40px;
     border-radius: 50px;
 }
 .sb-1 h2{
     background-color: #747C6C;
     color: aliceblue;
-    margin: 10px;
+    margin: 0;
     padding: 10px;
 }
 .sb-1, p{
     font-weight: 500;
     color: #d3d4d0;
     margin: 0px;
-    padding: 20px; 
+    padding: 10px; 
 
 }
 .sb-1 img{
-    width: 80vh;
+    width: 50%;
     border-radius: 50px;
 }
-
-
-
-
-
-@media screen and (max-width:1024){
-    /* PAGINA-SOBRE NOS */
-    .sb-1 img{
-        width: 50vh;
-    }
+.img-none{
+    display: none;
 }
-
-
 
 
 
@@ -351,6 +342,7 @@ main{
 
     /* PAGINA-SOBRE NOS */
     .section-sb{
+        display: flex;
         box-shadow: none;
     }
     .section-sb .sb-1{
@@ -358,15 +350,39 @@ main{
         flex-direction: column ;
     }
     .sb-1 img{
-        width: 40vh;
+        width: 35vh;
     }
+    .img-none-2{
+        display: none;
+    }
+    .img-none{
+        display: initial;
+    }
+    
 
 
     
 }
 
 @media screen and (max-width: 600px){
+
+
     /* PAGINA-SOBRE NOS */
+    .background-2 h1{
+        margin: 0;
+    }
+    .section-sb{
+    
+        margin: auto;
+    }
+    .sb-1{
+        padding: 0;
+        margin: 0;
+    }
+    .textos-sb{
+        font-size: 16px;
+        padding: 0;
+    }
     .sb-1 img{
         width: 30vh;
     }
