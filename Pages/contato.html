@@ -41,47 +41,42 @@
 
     </header>
 
-    <main>
-        <img src="../img/DSC05971.jpg" alt="Joao e Julio">
+    <main class="background-5">
         <h1>Contato</h1>
-
-        <div>
-            <form action="form.php" method="post">
-                <!-- input name y pass -->
-                <label for="">Nome</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nome e sobrenome">
-           
-                <label for="">Contato</label>
-                <input type="text" name="" id="">
-           
-                <label for="">Email</label>
-                <input type="email" name="" id="">
-
-                <label for="">Modalidade 1</label>
-                <input type="checkbox" name="Modalidade 1" id="">
-
-                <label for="">Modalidade 2</label>
-                <input type="checkbox" name="Modalidade 2" id="">
-           
-
-                <p>Comentarios</p>
-                <textarea name="" id="" cols="30" rows="10">
-           
-               </textarea>
-               
-           
-               <input type="submit" value="Enviar">
-           </form>
-
-        </div>
-
-
-        
-
-
-
-
     </main>
+
+    <div class="contenedor-formulario">
+        <form action="form.php" method="post">
+            <!-- input name y pass -->
+            <label for="">Nome</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nome e sobrenome">
+       
+            <label for="">Contato</label>
+            <input type="text" name="" id="">
+       
+            <label for="">Email</label>
+            <input type="email" name="" id="">
+
+
+            <label>
+                <input type="radio" name="modalidade" value="mensal">Mensal
+            </label>
+
+            <label>
+                <input type="radio" name="modalidade" value="trimestre">Trimestre
+            </label>
+            
+            <p>Comentarios</p>
+            <textarea name="" id="" cols="30" rows="10">
+       
+           </textarea>
+           
+       
+           <input type="submit" value="Enviar">
+       </form>
+
+    </div>
+    
 
     <footer>
         

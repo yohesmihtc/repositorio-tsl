@@ -314,9 +314,11 @@ main{
 }
 
 .acompanhamento-online h2{
-    padding: 0 20px 0 0;
+    background-color: #4e5242;
+    border-radius: 50px;
+    padding: 15px;
     text-align: center;
-    border-right: 1px solid #d3d4d0;
+    
 }
 .acompanhamento-online p{
     color: black;
@@ -367,6 +369,56 @@ main{
 .footer ul li a{ 
     text-decoration: none;
 }
+
+
+
+
+
+/* PAGINA-4 POPCAST */
+.background-4{
+    min-height: 70vh;
+    background: url('../img/tsljn.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.background-4 h1{
+    color: #d3d4d0;
+    margin: 0 0 0 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA- contato */
+.background-5{
+    min-height: 70vh;
+    background: url('../img/DSC05971.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.background-5 h1{
+    color: #d3d4d0;
+    margin: 0 0 0 100px;
+}
+
+.contenedor-formulario{
+    color: black;
+    padding: 100px;
+}
+.contenedor-formulario p{
+    color: black;
+}
+
 
 
 
@@ -518,9 +570,8 @@ main{
     }
     .acompanhamento-online h2{
         margin: 0 0 10px 0;
-        padding: 0 0 5px 0;
-        border-right:none;
-        border-bottom: 1px solid #d3d4d0;
+        padding: 10px;
+        
     }
     .modalidade{
 
