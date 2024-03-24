@@ -223,7 +223,6 @@ main{
 .section-sb{
     position: relative;
     margin: 0 50px 50px;
-    background-color: ;
     box-shadow: 1px 1px 15px rgb(52, 50, 50);
     padding: 10px;
 
@@ -493,7 +492,6 @@ main{
         margin: 0;
     }
     .section-sb{
-    
         margin: auto;
     }
     .sb-1{
@@ -511,12 +509,16 @@ main{
 
 
     /* PAGINA-ACOMPANHAMENTO ONLINE */
+    .background-3 h1{
+        margin: 0;
+        font-size: 18px;
+    }
     .section-bt{
         padding: 10px 10px;
     }
     .acompanhamento-online h2{
-        margin: 0;
-        padding: 0;
+        margin: 0 0 10px 0;
+        padding: 0 0 5px 0;
         border-right:none;
         border-bottom: 1px solid #d3d4d0;
     }
@@ -528,6 +530,9 @@ main{
     .contenedor-carta{
         display: flex;
         flex-direction: column;
+    }
+    .footer{
+        font-size: 10px;
     }
 
 
