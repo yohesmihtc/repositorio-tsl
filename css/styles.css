@@ -254,7 +254,7 @@ main{
 .sb-1 h2{
     background-color: #747C6C;
     color: aliceblue;
-    margin: 0;
+    margin: 50px;
     padding: 10px;
 }
 .sb-1, p{
@@ -271,6 +271,111 @@ main{
 .img-none{
     display: none;
 }
+
+
+/* PAGE 3 Acompanhamento Online */
+.background-3{
+    min-height: 70vh;
+    background: url('../img/TSL-acompanhamento-online2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.background-3 h1{
+    color: #d3d4d0;
+    margin: 0 0 0 100px;
+}
+.section-bt{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+
+    padding: 10px 100px;
+}
+.section-bt .accordion-header{
+    text-align: center;
+    color: aquamarine;
+
+}
+.style-accordion{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.acompanhamento-online{
+    margin: 0 100px 10px;
+    border-radius:  50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.acompanhamento-online h2{
+    padding: 0 20px 0 0;
+    text-align: center;
+    border-right: 1px solid #d3d4d0;
+}
+.acompanhamento-online p{
+    color: black;
+}
+.modalidade{
+    margin: 10px 0;
+    
+    color: #d3d4d0;
+    background-color: black;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px rgb(52, 50, 50);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contenedor-carta{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-carta .carta{
+    margin: 10px 20px;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 50px rgb(52, 50, 50);
+}
+.contenedor-carta div .carta-cuerpo{
+    padding: 10px;
+
+}
+.carta-cuerpo .boton{
+    background-color: #4e5242;
+    color: #d3d4d0;
+}
+.carta-cuerpo .boton:hover{
+    background-color: #747C6C;
+    color: black;
+}
+.footer ul li a{ 
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -361,6 +466,17 @@ main{
     
 
 
+    /* PAGINA-ACOMPANHAMENTO ONLINE */
+    .background-3 h1{
+        color: #d3d4d0;
+        margin: 0;
+    }
+    .contenedor-carta{
+        display: flex;
+        flex-direction: column;
+    }
+
+
     
 }
 
@@ -386,6 +502,27 @@ main{
     .sb-1 img{
         width: 30vh;
     }
+
+
+
+    /* PAGINA-ACOMPANHAMENTO ONLINE */
+    .section-bt{
+        padding: 10px 10px;
+    }
+    .acompanhamento-online h2{
+        margin: 0;
+        padding: 0;
+        border-right:none;
+        border-bottom: 1px solid #d3d4d0;
+    }
+    .modalidade{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
 
 
