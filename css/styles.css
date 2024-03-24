@@ -347,7 +347,7 @@ main{
 }
 
 .contenedor-carta .carta{
-    margin: 10px 20px;
+    margin: 10px 40px;
     display: inline-block;
     justify-content: space-around;
     align-items: center;
@@ -472,8 +472,13 @@ main{
         margin: 0;
     }
     .contenedor-carta{
+        margin: 0px;
+        padding: 0px;
         display: flex;
-        flex-direction: column;
+        
+    }
+    .contenedor-carta .carta{
+        margin: 10px 10px;
     }
 
 
@@ -517,6 +522,10 @@ main{
     }
     .modalidade{
 
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-carta{
         display: flex;
         flex-direction: column;
     }
