@@ -13,7 +13,7 @@
 
 /* estilos generales*/
 body {
-    font-family: 'Montserrat', Roboto, sans-serif;
+    font-family: 'Montserrat';
     background-color: #d3d4d0;
     text-align: center;
     font-size: 16px;
@@ -90,15 +90,15 @@ h1{
     padding: 0 10px;
     text-transform: uppercase;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
     text-shadow: 2px 2px 30px black;
     margin-bottom: 30px;
 }
 
-p {
+.background-1 p {
     margin: 0px 100px;
-    padding: 0px 150px;
+    padding: 0px 200px;
     font-size: 20px;
     text-shadow: 2px 2px 50px black;
     text-align: center;
@@ -106,7 +106,7 @@ p {
 }
 
 a{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 img{
@@ -380,7 +380,7 @@ main{
 
 /* GRID */
 .contenedor-grid-popcast{
-    background-color: #040403;
+    background-color: #081217;
     display: grid;
     grid-template-rows:repeat(4, 200px);
     grid-template-columns:1fr 1fr 1fr;
@@ -523,17 +523,19 @@ main{
         min-height: 50vh;
     
     }
-
+    
+    
     h1{
         font-size: 25px;
-        margin-bottom: 10px;
+        margin: 30px 0;
     }
-    p{
-        font-size: 18px;
-        padding: 0;
-        margin: 30px 0px;
 
+    .background-1 p {
+        margin: 0;
+        padding: 0px 100px;
+        margin-bottom: 35px;
     }
+    
 
     /* PAGINA-SOBRE NOS */
     .section-sb{
@@ -615,6 +617,14 @@ main{
 }
 
 @media only screen and (max-width: 600px){
+    /* INDEX */
+    
+    .background-1 p {
+        font-size: 16px;
+        margin: 0;
+        padding: 0px 20px;
+        margin-bottom: 35px;
+    }
 
 
     /* PAGINA-SOBRE NOS */
@@ -675,6 +685,9 @@ main{
     }
 
     /* PAGINA CONTATO */
+    .background-5 h1{
+        margin: 0 0 10px 0;
+    }
     .contenedor-formulario form{
         margin: 20px;
         padding: 0 20px;
