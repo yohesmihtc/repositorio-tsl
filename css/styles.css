@@ -1,3 +1,171 @@
-@import url(components/_header.scss);
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body .header {
+  background-color: #4e5242;
+  text-align: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header .menu {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .menu .logo {
+  width: 9%;
+  background-color: #4e5242;
+  display: flex;
+  align-items: center;
+}
+body .header .menu .logo img {
+  width: 100%;
+}
+body .header .menu #menu {
+  display: none;
+}
+body .header .menu label {
+  display: none;
+  cursor: pointer;
+}
+body .header .menu label .menu-icono {
+  width: 25px;
+}
+body .header .menu .navbar {
+  padding: 20px;
+  display: flex;
+}
+body .header .menu .navbar ul {
+  width: 100%;
+  background-color: #4e5242;
+  padding: 0;
+  margin: 0;
+}
+body .header .menu .navbar ul li {
+  display: flex;
+  display: inline;
+}
+body .header .menu .navbar ul li a {
+  font-size: 16px;
+  padding: 15px;
+  color: #d3d4d0;
+  text-decoration: none;
+}
+body .header .menu .navbar ul li a:hover {
+  color: black;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+body footer {
+  padding: 10px;
+  background-color: #4e5242;
+  color: #d3d4d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer ul {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+}
+body footer ul li a {
+  color: #d3d4d0;
+}
+body footer ul li a:hover {
+  color: black;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+body footer p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #d3d4d0;
+  text-align: center;
+  font-size: 16px;
+}
+body .background-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background: url("../img/TSLjuliojoao.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+body .background-1 .portada {
+  color: #d3d4d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .background-1 .portada h1 {
+  color: #d3d4d0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 30px black;
+  margin-bottom: 30px;
+}
+body .background-1 .portada div p {
+  margin: 0px 100px;
+  padding: 0px 200px;
+  font-size: 20px;
+  text-shadow: 2px 2px 50px black;
+  text-align: center;
+  margin-bottom: 35px;
+}
+body .background-1 .portada div .boton {
+  background-color: #4e5242;
+  color: #d3d4d0;
+  margin: 10px;
+  padding: 10px 35px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+body .background-1 .portada div .boton a {
+  list-style: none;
+  text-decoration: none;
+  color: #d3d4d0;
+  font-weight: 500;
+  font-size: 15px;
+}
+body .background-1 .portada div .boton a:hover {
+  color: black;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
 
 /*# sourceMappingURL=styles.css.map */
