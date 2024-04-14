@@ -75,6 +75,131 @@ body .header .menu .navbar ul li a:hover {
   border-radius: 50px;
 }
 
+.background-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background: url("../img/TSLjuliojoao.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.background-1 .portada {
+  color: #d3d4d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background-1 .portada h1 {
+  color: #d3d4d0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 30px black;
+  margin-bottom: 30px;
+}
+.background-1 .portada div p {
+  margin: 0px 100px;
+  padding: 0px 200px;
+  font-size: 20px;
+  text-shadow: 2px 2px 50px black;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.background-1 .portada div .boton {
+  background-color: #4e5242;
+  color: #d3d4d0;
+  margin: 10px;
+  padding: 10px 35px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.background-1 .portada div .boton a {
+  list-style: none;
+  text-decoration: none;
+  color: #d3d4d0;
+  font-weight: 500;
+  font-size: 15px;
+}
+.background-1 .portada div .boton a:hover {
+  color: black;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.sobre-nos .background-2 {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  background: url("../img/theStrengthlab.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.sobre-nos .background-2 h1 {
+  margin: 0 0 0 100px;
+  color: #d3d4d0;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 30px black;
+}
+.sobre-nos .section-sb {
+  position: relative;
+  margin: 0 50px 50px;
+  box-shadow: 1px 1px 15px rgb(52, 50, 50);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.sobre-nos .section-sb .sb-1 {
+  padding: 10px;
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: 1px 1px 50px rgb(52, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobre-nos .section-sb .sb-1 img {
+  width: 50%;
+  border-radius: 50px;
+}
+.sobre-nos .section-sb .sb-1 .textos-sb {
+  background-color: #4e5242;
+  margin: 0;
+  padding: 40px;
+  border-radius: 50px;
+}
+.sobre-nos .section-sb .sb-1 .textos-sb h2 {
+  background-color: #747C6C;
+  color: aliceblue;
+  margin: 50px;
+  padding: 10px;
+}
+.sobre-nos .section-sb .sb-1 .textos-sb p {
+  font-weight: 500;
+  color: #d3d4d0;
+  margin: 0px;
+  padding: 10px;
+}
+.sobre-nos .section-sb .sb-1 .img-none {
+  display: none;
+}
+
 body footer {
   padding: 10px;
   background-color: #4e5242;
@@ -107,65 +232,6 @@ body {
   background-color: #d3d4d0;
   text-align: center;
   font-size: 16px;
-}
-body .background-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 90vh;
-  background: url("../img/TSLjuliojoao.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-body .background-1 .portada {
-  color: #d3d4d0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .background-1 .portada h1 {
-  color: #d3d4d0;
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 30px black;
-  margin-bottom: 30px;
-}
-body .background-1 .portada div p {
-  margin: 0px 100px;
-  padding: 0px 200px;
-  font-size: 20px;
-  text-shadow: 2px 2px 50px black;
-  text-align: center;
-  margin-bottom: 35px;
-}
-body .background-1 .portada div .boton {
-  background-color: #4e5242;
-  color: #d3d4d0;
-  margin: 10px;
-  padding: 10px 35px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-}
-body .background-1 .portada div .boton a {
-  list-style: none;
-  text-decoration: none;
-  color: #d3d4d0;
-  font-weight: 500;
-  font-size: 15px;
-}
-body .background-1 .portada div .boton a:hover {
-  color: black;
-  text-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
