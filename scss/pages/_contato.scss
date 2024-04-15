@@ -1,0 +1,46 @@
+body{
+    .background-5{
+        display: flex;
+        align-items: center;
+
+        min-height: 70vh;
+        background: url('../img/DSC05971.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        h1{
+            @include h1;    
+        }
+    }
+    .contenedor-formulario{
+        
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        border: 0.5px solid black ;
+        border-radius: 5px;
+        form{
+            margin: 20px;
+            padding: 0 100px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            input{
+                padding: 10px;
+                margin: 10px;
+                width: 400px;
+                border: 0.5px solid black ;
+                border-radius: 5px;
+            }
+            .input-radio{
+                padding: 10px;
+                width: 20px;
+            }
+
+        }
+    }
+
+}
