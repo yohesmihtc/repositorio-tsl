@@ -9,6 +9,8 @@
         background-position: center center;
         background-size: cover;
         h1{
+            padding: 20px;
+            background-color: $main-color;
             @include h1;
         }
 
@@ -17,7 +19,7 @@
     .section-sb{
         position: relative;
         margin: 0 50px 50px;
-        box-shadow: 1px 1px 15px rgb(52, 50, 50);
+       
         padding: 10px;
         @include flex-column-center;
         gap: 100px;
@@ -32,6 +34,9 @@
                 width: 50%;
                 border-radius: 50px
 
+            }
+            .img-none{
+                display: none;  
             }
         
             .textos-sb{
@@ -54,13 +59,57 @@
                 }
             }
         }
+    }  
+}
 
-        .sb-1{
-            .img-none{
-                display: none;
-    
+
+
+@media only screen and (max-width:960px){
+    .sobre-nos{
+        //SOBRE NOS
+        .background-2{
+            min-height: 50vh;
+            h1{
+                color: $white-color;
+                margin: 100px 0 0 50px;
+            }
+        }
+        .section-sb{
+            display: flex; 
+            .sb-1{
+                display: flex;
+                flex-direction: column ;
+                img{
+                    width: 35vh;
+                }
+               
+
+            }
+            .sb-1{
+                .img-none{
+                    display: initial;
+                    width: 35vh;
+                }
+                .img-none-2{
+                    display: none;
+                    width: 35vh;
+                }
             }
 
         }
-    }  
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sobre-nos{
+        //SOBRE NOS
+        .background-2{
+            h1{
+                margin:100px 0 0 50px;
+                font-size: 20px;
+            }
+
+        }
+        
+    }
 }
