@@ -149,29 +149,35 @@ body .header .menu .navbar ul li a:hover {
   background-size: cover;
 }
 .background-1 .portada {
+  margin: 0;
+  padding: 0;
   color: #d3d4d0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .background-1 .portada h1 {
   color: #d3d4d0;
   padding: 0 10px;
   text-transform: uppercase;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 2px;
   text-shadow: 2px 2px 30px black;
   margin-bottom: 30px;
 }
 .background-1 .portada div p {
   margin: 0px 100px;
-  padding: 0px 200px;
-  font-size: 20px;
+  padding: 0px 150px;
+  text-transform: capitalize;
+  font-size: 24px;
   text-shadow: 2px 2px 50px black;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 35px;
+  backdrop-filter: blur(1px);
 }
 .background-1 .portada div .boton {
   background-color: #4e5242;
@@ -278,6 +284,7 @@ body .header .menu .navbar ul li a:hover {
   border-radius: 50px;
 }
 .sobre-nos .section-sb .sb-1 .textos-sb h2 {
+  text-align: center;
   background-color: #747C6C;
   color: aliceblue;
   margin: 50px;
@@ -479,6 +486,7 @@ body .contenedor-grid-popcast {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 body .contenedor-grid-popcast .grid-item {
   width: 100%;
@@ -671,7 +679,6 @@ body footer p {
 body {
   font-family: "Montserrat";
   background-color: #d3d4d0;
-  text-align: center;
   font-size: 16px;
 }
 

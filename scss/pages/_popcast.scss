@@ -21,6 +21,7 @@ body{
         grid-template-columns:1fr 1fr 1fr;
         justify-content: space-around;
         align-items: center;
+        text-align: center;
         .grid-item{
             width: 100%;
         }
@@ -32,6 +33,7 @@ body{
                    background-color: $secondary-color; 
                    color: $white-color;
                    font-size: xx-large;
+                   
                 }
             }
         }
