@@ -199,14 +199,35 @@ body .background-1 div .boton:hover {
   background-color: #747C6C;
 }
 body .home {
+  padding: 10px 100px;
+  margin: 0;
+  background-color: black;
   color: #d3d4d0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background-color: black;
 }
-body .home p {
-  margin: 100px;
+body .home div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+body .home div h2 {
+  color: black;
+  padding: 10px;
+  background-color: #747C6C;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+body .home div p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .home video {
+  width: 25%;
 }
 
 @media only screen and (max-width: 960px) {
@@ -223,6 +244,30 @@ body .home p {
     padding: 0px 100px;
     margin-bottom: 35px;
   }
+  body .home {
+    padding: 10px 100px;
+    margin: 0;
+    background-color: black;
+    color: #d3d4d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .home div {
+    margin: 5px;
+    padding: 5px;
+  }
+  body .home div h2 {
+    font-size: 20px;
+  }
+  body .home div p {
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+  }
+  body .home video {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 600px) {
   body .background-1 {
@@ -235,13 +280,22 @@ body .home p {
   body .background-1 div .boton {
     margin: 10px 0;
   }
-  body .background-1 div .boton a {
-    margin: 0;
+  body .home {
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
-  body .home p {
+  body .home div {
+    margin: 10px 0;
+  }
+  body .home div h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  body .home div p {
     font-size: 16px;
-    margin: 50px;
+    margin: 10px 0;
   }
 }
 .sobre-nos .background-2 {

@@ -64,15 +64,38 @@ body{
         
     }
     .home{
+        padding: 10px 100px;
+        margin: 0;
+        background-color: black;
         color: $white-color;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        background-color: black;
-        p{
-            margin: 100px;
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            width: 50%;
+            padding: 10px;
+            h2{
+                color: black;
+                padding: 10px;
+                background-color: $secondary-color;
+                margin: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            p{
+                margin: 20px;
+                font-size: 20px;            
+            }   
         }
-        
+        video{
+            width: 25%;
+        } 
+            
+              
     }
 }
 
@@ -97,6 +120,34 @@ body{
                 }
             }
         }
+        .home{
+            padding: 10px 100px;
+            margin: 0;
+            background-color: black;
+            color: $white-color;
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            div{
+                margin: 5px;
+                padding: 5px;
+                h2{
+                    font-size: 20px;
+                    
+                }
+                p{
+                    margin: 5px;
+                    padding: 0px;
+                    font-size: 15px;            
+                }   
+            }
+            video{
+                width: 50%;
+            } 
+                
+                  
+        }
     }
 
 }
@@ -110,20 +161,27 @@ body{
             flex-direction: column;
             .boton{
                 margin: 10px 0;
-
-                a{
-                    margin: 0;
-                    padding: 0;
-                }
             }
         }
 
     }
    .home{
-        p{
-            font-size: 16px;
-            margin: 50px;
-
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        div{
+            margin: 10px 0;
+            h2{
+                font-size: 18px;
+                margin: 5px;
+            }
+            
+            p{
+                font-size: 16px;
+                margin: 10px 0;
+    
+            }
         }
    }
     }
