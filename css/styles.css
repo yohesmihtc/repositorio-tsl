@@ -137,74 +137,76 @@ body .header .menu .navbar ul li a:hover {
     top: 70px;
   }
 }
-.background-1 {
+body .background-1 {
+  padding-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   min-height: 90vh;
   background: url("../img/TSLjuliojoao.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
-.background-1 .portada {
-  margin: 0;
-  padding: 0;
+body .background-1 .portada {
+  margin: 3rem;
+  padding: 100px 0px;
   color: #d3d4d0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-top: 3px solid #d3d4d0;
+  border-bottom: 3px solid #d3d4d0;
 }
-.background-1 .portada h1 {
+body .background-1 .portada h1 {
   color: #d3d4d0;
-  padding: 0 10px;
+  padding: 0px;
   text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 36px;
+  font-weight: 400;
   letter-spacing: 2px;
   text-shadow: 2px 2px 30px black;
-  margin-bottom: 30px;
 }
-.background-1 .portada div p {
-  margin: 0px 100px;
-  padding: 0px 150px;
-  text-transform: capitalize;
-  font-size: 24px;
-  text-shadow: 2px 2px 50px black;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 35px;
-  backdrop-filter: blur(1px);
+body .background-1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.background-1 .portada div .boton {
+body .background-1 div .boton {
   background-color: #4e5242;
   color: #d3d4d0;
   margin: 10px;
-  padding: 10px 35px;
+  padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
 }
-.background-1 .portada div .boton a {
+body .background-1 div .boton a {
   list-style: none;
   text-decoration: none;
   color: #d3d4d0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
-.background-1 .portada div .boton a:hover {
-  color: black;
-}
-.background-1 .portada div .boton:hover {
+body .background-1 div .boton:hover {
   color: black;
   text-shadow: 2px 2px 10px rgb(0, 0, 0);
   background-color: #747C6C;
+}
+body .home {
+  color: #d3d4d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+body .home p {
+  margin: 100px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -223,11 +225,23 @@ body .header .menu .navbar ul li a:hover {
   }
 }
 @media only screen and (max-width: 600px) {
-  body .background-1 .portada div p {
-    font-size: 16px;
+  body .background-1 {
+    min-height: 10vh;
+  }
+  body .background-1 div {
+    display: flex;
+    flex-direction: column;
+  }
+  body .background-1 div .boton {
+    margin: 10px 0;
+  }
+  body .background-1 div .boton a {
     margin: 0;
-    padding: 0px 20px;
-    margin-bottom: 35px;
+    padding: 0;
+  }
+  body .home p {
+    font-size: 16px;
+    margin: 50px;
   }
 }
 .sobre-nos .background-2 {
