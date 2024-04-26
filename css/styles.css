@@ -199,35 +199,37 @@ body .background-1 div .boton:hover {
   background-color: #747C6C;
 }
 body .home {
-  padding: 100px;
+  padding: 10px 100px;
   margin: 0;
   background-color: black;
   color: #d3d4d0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 body .home div {
+  width: 50%;
+  padding: 0 20px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 60%;
-  padding: 5px 10px;
 }
 body .home div h2 {
   color: black;
   padding: 10px;
   background-color: #747C6C;
-  margin: 20px;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 0.1em;
 }
 body .home div p {
-  margin: 10px;
+  margin: 20px;
   font-size: 20px;
+  letter-spacing: 0.1em;
 }
 body .home video {
-  width: 20%;
+  width: 25%;
+  border: 1px solid #d3d4d0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -245,7 +247,7 @@ body .home video {
     margin-bottom: 35px;
   }
   body .home {
-    padding: 10px 100px;
+    padding: 10px 50px;
     margin: 0;
     background-color: black;
     color: #d3d4d0;
@@ -266,7 +268,7 @@ body .home video {
     font-size: 15px;
   }
   body .home video {
-    width: 50%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -281,13 +283,14 @@ body .home video {
     margin: 10px 0;
   }
   body .home {
-    padding: 50px 0;
+    padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
   }
   body .home div {
-    margin: 10px 0;
+    width: 70%;
+    margin: 20px 0;
   }
   body .home div h2 {
     font-size: 18px;
@@ -296,6 +299,9 @@ body .home video {
   body .home div p {
     font-size: 16px;
     margin: 10px 0;
+  }
+  body .home video {
+    width: 68%;
   }
 }
 .sobre-nos .background-2 {
