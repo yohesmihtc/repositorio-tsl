@@ -39,8 +39,6 @@ body{
                     width: 25px;
                 }
             }
-
-            //Menu navegacion
             .navbar{
                 padding: 20px;
                 
@@ -50,13 +48,11 @@ body{
                     background-color: $main-color;
                     padding: 0;
                     margin: 0;
-
                     li{
                         text-transform: uppercase;
                         display: flex;
                         display: inline;
                         a{
-                            
                             font-size: 15px;
                             padding: 10px;
                             color: $white-color;
@@ -66,7 +62,7 @@ body{
                             background-color: $secondary-color;
                             color: black;
                             
-                            border-radius: 50px;
+                            border-radius: 5px;
                                 
                         }
                             
@@ -80,7 +76,6 @@ body{
 
 @media only screen and (max-width:960px){
 body{
-        //NAVBAR
     .header{
         border-bottom: 1px solid black;
             .menu{
@@ -134,7 +129,6 @@ body{
 }
 @media only screen and (max-width:600px){
     body{
-        //NAVBAR
     .header{
         border-bottom: 1px solid black;
             .menu{

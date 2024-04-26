@@ -33,7 +33,16 @@ body{
                    background-color: $secondary-color; 
                    color: $white-color;
                    font-size: xx-large;
-                   
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   i{
+                    font-size: 50px;
+                    margin: 10px;
+                   }                   
+                }
+                h2:hover{
+                    color: black;
                 }
             }
         }
@@ -53,10 +62,20 @@ body{
                    background-color: $secondary-color;
                    color: $white-color;
                    font-size: xx-large;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   i{
+                    font-size: 50px;
+                    margin: 10px;
+
+                   }
                 }
-            }
-        }
-        
+                h2:hover{
+                    color: black;
+                }
+            }           
+        }        
     }
 }
 
