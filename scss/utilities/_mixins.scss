@@ -27,3 +27,9 @@
     letter-spacing: 2px;
     text-shadow: 2px 2px 30px black;
 }
+@mixin parrafos{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-align: justify;
+
+}

@@ -19,20 +19,19 @@
     .section-sb{
         position: relative;
         margin: 0 50px 50px;
-       
         padding: 10px;
         @include flex-column-center;
         gap: 100px;
+        
         .sb-1{
             padding: 10px;
             background-color: black;
-            border-radius: 50px;
             box-shadow: 1px 1px 50px rgb(52, 50, 50);
             @include flex;
 
             img{
                 width: 50%;
-                border-radius: 50px
+                
 
             }
             .img-none{
@@ -42,21 +41,36 @@
             .textos-sb{
                 background-color: $main-color;
                 margin: 0;
-                padding: 40px;
-                border-radius: 50px;
+                padding: 30px;
+
                 h2{
-                    text-align: center;
+                    text-align: left;
                     background-color: $secondary-color;
-                    color: aliceblue;
+                    color: black;
                     margin: 50px;
-                    padding: 10px;
+                    padding: 20px;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+
+                    a{
+                        margin:0 10px 0 0px;
+                        text-decoration: none;
+                        color: black;
+                        i{
+                            font-size: 30px;
+                        }
+                    }
+                    a:hover{
+                        color: $white-color;
+                    }
                 }
                 p{
-                    font-weight: 500;
-                    color: #d3d4d0;
+                    color: $white-color;
                     margin: 0px;
                     padding: 10px;
-    
+                    font-size: 20px;
+                    letter-spacing: 0.1em;    
                 }
             }
         }
@@ -110,6 +124,22 @@
                 font-size: 20px;
             }
 
+        }
+        .section-sb{
+            margin: 10px;
+            gap: 50px;
+            .textos-sb{
+                margin: 0;
+                padding: 0;
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    margin: 0;
+                    padding: 5px;
+                    font-size: 15px;
+                }
+            }
         }
         
     }
