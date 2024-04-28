@@ -226,7 +226,6 @@ body .home div p {
   margin: 20px;
   font-size: 20px;
   letter-spacing: 0.1em;
-  text-align: justify;
 }
 body .home video {
   width: 25%;
@@ -356,11 +355,11 @@ body .home video {
   padding: 30px;
 }
 .sobre-nos .section-sb .sb-1 .textos-sb h2 {
+  margin: 50px;
+  padding: 20px;
   text-align: left;
   background-color: #747C6C;
   color: black;
-  margin: 50px;
-  padding: 20px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -420,17 +419,12 @@ body .home video {
     margin: 10px;
     gap: 50px;
   }
-  .sobre-nos .section-sb .textos-sb {
-    margin: 0;
-    padding: 0;
+  .sobre-nos .section-sb .sb-1 .textos-sb h2 {
+    margin: 5px;
+    font-size: 18px;
   }
-  .sobre-nos .section-sb .textos-sb h2 {
-    font-size: 20px;
-  }
-  .sobre-nos .section-sb .textos-sb p {
-    margin: 0;
-    padding: 5px;
-    font-size: 15px;
+  .sobre-nos .section-sb .sb-1 .textos-sb p {
+    font-size: 16px;
   }
 }
 body .background-3 {
@@ -712,33 +706,115 @@ body .background-5 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 30px black;
 }
-body .contenedor-formulario {
-  color: black;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  border: 0.5px solid black;
-  border-radius: 5px;
+body .container-inf {
+  background-color: #081217;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-body .contenedor-formulario form {
-  margin: 20px;
-  padding: 0 100px;
-  text-align: left;
+body .container-inf .box-info {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  gap: 50px;
 }
-body .contenedor-formulario form input {
-  padding: 10px;
-  margin: 10px;
-  width: 400px;
-  border: 0.5px solid black;
-  border-radius: 5px;
+body .container-inf .box-info h2 {
+  color: #d3d4d0;
+  padding: 5px;
+  background-color: #747C6C;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.1em;
 }
-body .contenedor-formulario form .input-radio {
+body .container-inf .box-info .data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+body .container-inf .box-info .data p {
+  font-size: 1rem;
+}
+body .container-inf .box-info .data p i {
+  color: #d3d4d0;
+  margin-right: 10px;
+  font-size: 25px;
+}
+body .container-inf .box-info .data p a {
+  text-decoration: none;
+  color: #d3d4d0;
+}
+body .container-inf .box-info .data p a:hover {
+  color: #747C6C;
+}
+body .container-inf form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+body .container-inf form .input-box {
+  position: relative;
+}
+body .container-inf form .input-box input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  color: #d3d4d0;
+}
+body .container-inf form .input-box input::placeholder, body .container-inf form .input-box textarea::placeholder {
+  color: #a3a3a3;
+}
+body .container-inf form .input-box input:focus::placeholder, body .container-inf form .input-box textarea:focus::placeholder {
+  color: transparent;
+}
+body .container-inf form .input-box input:focus, body .container-inf form .input-box textarea:focus {
+  border-bottom: 3px solid #4e5242;
+  animation: shake 0.2s;
+}
+body .container-inf form .input-box textarea {
+  width: 100%;
+  height: 130px;
   padding: 10px;
-  width: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.3s;
+  color: #d3d4d0;
+  letter-spacing: 1.5px;
+}
+body .container-inf form .input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+body .container-inf form .input-box input:focus ~ i {
+  color: #d3d4d0;
+}
+body .container-inf form button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: #747C6C;
+  color: #fff;
+  border: none;
+  transition: 0.1s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+body .container-inf form button:hover {
+  background: black;
 }
 
 @media only screen and (max-width: 960px) {
@@ -749,27 +825,47 @@ body .contenedor-formulario form .input-radio {
     color: #d3d4d0;
     margin: 0 0 0 10px;
   }
+  body .container-inf {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  body .container-inf .box-info {
+    width: 80%;
+    gap: 5px;
+  }
+  body .container-inf .box-info h2 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  body .container-inf .box-info .data {
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+  }
+  body .container-inf form {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 600px) {
   body .background-5 h1 {
     margin: 100px 0 0 50px;
     font-size: 20px;
   }
-  body .contenedor-formulario form {
-    margin: 20px;
-    padding: 0 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  body .container-inf .box-info {
+    width: 100%;
   }
-  body .contenedor-formulario form input {
-    padding: 5px;
-    margin: 5px;
-    width: 300px;
-    border: 0.5px solid black;
-    border-radius: 5px;
+  body .container-inf .box-info h2 {
+    font-size: 16px;
+  }
+  body .container-inf .box-info .data p {
+    font-size: 15px;
+  }
+  body .container-inf form {
+    width: 100%;
   }
 }
 body footer {

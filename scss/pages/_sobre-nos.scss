@@ -28,11 +28,8 @@
             background-color: black;
             box-shadow: 1px 1px 50px rgb(52, 50, 50);
             @include flex;
-
             img{
                 width: 50%;
-                
-
             }
             .img-none{
                 display: none;  
@@ -42,13 +39,12 @@
                 background-color: $main-color;
                 margin: 0;
                 padding: 30px;
-
                 h2{
+                    margin: 50px;
+                    padding: 20px;
                     text-align: left;
                     background-color: $secondary-color;
                     color: black;
-                    margin: 50px;
-                    padding: 20px;
                     text-transform: uppercase;
                     display: flex;
                     align-items: center;
@@ -69,8 +65,7 @@
                     color: $white-color;
                     margin: 0px;
                     padding: 10px;
-                    font-size: 20px;
-                    letter-spacing: 0.1em;    
+                    @include parrafos;  
                 }
             }
         }
@@ -128,16 +123,17 @@
         .section-sb{
             margin: 10px;
             gap: 50px;
-            .textos-sb{
-                margin: 0;
-                padding: 0;
-                h2{
-                    font-size: 20px;
-                }
-                p{
-                    margin: 0;
-                    padding: 5px;
-                    font-size: 15px;
+            .sb-1{
+                .textos-sb{
+                    
+                    h2{
+                        margin: 5px;
+                        font-size: 18px;
+                    }
+                    p{
+                        
+                        font-size: 16px;
+                    }
                 }
             }
         }

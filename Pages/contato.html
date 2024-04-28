@@ -45,42 +45,36 @@
         <h1>Contato</h1>
     </main>
 
-    <div class="contenedor-formulario">
-
-        <!-- <p><a href="https://wa.me/911586595" target="_blank"><strong>WhatsApp</strong></a></p> -->
-
-        <form action="form.php" method="post">
-
-            <label for="">Nome</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nome e sobrenome">
-       
-            <label for="">Contato</label>
-            <input type="text" name="" id="">
-       
-            <label for="">Email</label>
-            <input type="email" name="" id="">
-
-
-            <label>
-                <input class="input-radio" type="radio" name="modalidade" value="mensal">Mensal
-            </label>
-
-            <label>
-                <input class="input-radio" type="radio" name="modalidade" value="trimestre">Trimestre
-            </label>
-            
-            <p>Comentarios</p>
-            <textarea name="" id="" cols="50" rows="10">
-       
-           </textarea>
-           
-       
-           <input type="submit" value="Enviar">
-       </form>
-
+    <div class="container-inf">
+        <div class="box-info">
+            <h2>Entre em contato conosco</h2>
+            <div class="data">
+                <p><a href="https://api.whatsapp.com/send/?phone=911586595&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i>+351 911 586 595</a></p>
+                <p></p>
+                <p><a href="mailto:thestrengthlab.TSL@gmail.com"><i class="fa-solid fa-envelope"></i>thestrengthlab.TSL@gmail.com</a></p>
+            </div>
+        </div>
+        <form action="https://formsubmit.co/yohesmiht0298@gmail.com" method="POST" >
+            <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email" required placeholder="Correio eletrônico">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="phone" id="phone" placeholder="Contacto">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+                <textarea name="message" id="message"  placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button type="submit" value="Enviar">Enviar mensagem</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/Pages/contato.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </div>
-    
-
     <footer>
         
         <ul>
