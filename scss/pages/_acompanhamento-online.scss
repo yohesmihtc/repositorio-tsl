@@ -1,10 +1,7 @@
 body{
-  
-    //END
     .background-3{
         display: flex;
         align-items: center;
-
         min-height: 70vh;
         background: url('../img/TSL-acompanhamento-online2.jpg');
         background-repeat: no-repeat;
@@ -16,72 +13,110 @@ body{
             @include h1;    
         }
     }
-    .section-bt{
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        padding: 10px 100px;
-    }
-
     .acompanhamento-online{
-        margin: 0;
+        background-color: #081217;
+        padding: 50px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
         .modalidade{
-            margin: 20px 5;
-            color: #000000;
-            background-color: #4e5242;
-            padding: 40px;
-            border-radius: 50px;
-            box-shadow: 1px 1px 10px rgb(52, 50, 50);
-            @include flex;
-            h2{
+            width: 40%;
+            padding: 50px;
+            background-color: #081217;
+            color: white;
+            padding: 10px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            h3{
                 background-color: $secondary-color;
-                padding: 15px;
-                text-align: center;
-            }
+                color: $white-color;
+                padding: 5px 20px;
+
+                }
             ul{
                 li{
                     color: $white-color;
+                    font-weight: 500;
                     margin: 0;
                     padding: 10px 0;
-
                 }
             }
-
         }
-        .contenedor-carta{
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            @include flex;
-            .carta{
-                margin: 10px 40px;
-                display: inline-block;
-                justify-content: space-around;
-                align-items: center;
-                box-shadow: 1px 1px 50px rgb(52, 50, 50);
-                .carta-cuerpo{
-                    padding: 20px;
-                    .boton{
-                        background-color: $main-color;
-                        color: $white-color;
+        .section-bt{
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            
+            .accordion{
+                
+                .accordion-item{
+                    
+                    .accordion-header{
+                       
+                    }
+                    .accordion-button{
                         text-transform: uppercase;
-                        box-shadow: 1px 1px 50px rgb(52, 50, 50);
+                        font-weight: 600;
+                        font-size: 20px;
+                        letter-spacing: 0.1em;
+                        background-color: $secondary-color;
+                        color: $white-color;
+                        box-shadow: none;
                     }
-                    .boton:hover{
-                        background-color: #747C6C;
-                        color: black;
-                        
+                    .accordion-collapse, .collapse, .show{                    
+                        .accordion-body{
+                            
+                            color: black;
+    
+                        }
+    
                     }
                 }
+            }
+        }
+    }
+    
+    .contenedor-carta{
+        background: url('../img/repeated-square-dark.png');
+        background-repeat: repeat;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        @include flex;
+        justify-content: space-around;
+        .carta{
+            width: 30%;
+            margin: margin 20px;
+            display: inline-block;
+            justify-content: space-around;
+            align-items: center;
+            .card-img-top{
 
             }
+            .carta-cuerpo{
+                padding: 20px;
+                h4{
+                    text-transform: uppercase;
 
+                }
+                p{
+                    text-transform: uppercase;
+
+                }
+                .boton{
+                    padding: 20px;
+                    background-color: $main-color;
+                    color: $white-color;
+                    text-transform: uppercase;
+                }
+                .boton:hover{
+                    background-color: #747C6C;
+                    color: black;                    
+                }                
+            }
         }
-
     }
     .footer{
         ul{
@@ -92,14 +127,9 @@ body{
             }
         }
     }
-
-
 }
 @media only screen and (max-width:960px){
-
     body{
-        //PAGINA-ACOMPANHAMENTO ONLINE
-        
         .background-3 {
             min-height: 50vh;
             h1{
@@ -108,17 +138,9 @@ body{
             }
         }
         .acompanhamento-online{
-
-            .contenedor-carta{
-                margin: 0px;
-                padding: 0px;
-                display: flex;
-                .carta{
-                    margin: 10px 10px;
-                }
-            }
-
+            padding: 50px 10px;
         }
+
     }
 }
 
@@ -132,10 +154,11 @@ body{
             }
         }
         .section-bt{
-            padding: 10px 10px;
+            margin: 0;
+            padding: 20px 0;
         }
         .acompanhamento-online{
-            margin: 0 20px 5px;
+            margin: 0;
             .modalidade{
                 display: flex;
                 flex-direction: column;
@@ -145,10 +168,11 @@ body{
 
                 }
             }
-            .contenedor-carta{
-                display: flex;
-                flex-direction: column;
-            }
+            
+        }
+        .contenedor-carta{
+            display: flex;
+            flex-direction: column;
         }
     }
 }

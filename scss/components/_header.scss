@@ -80,7 +80,8 @@ body{
         border-bottom: 1px solid black;
             .menu{
                 padding: 20px;
-                .logo{             
+                .logo{
+                    background-color: $secondary-color;             
                     width: 15%;
                     img{
                         width: 100%;
@@ -101,6 +102,9 @@ body{
                     ul{
                         display: flex;
                         flex-direction: column;
+                        text-align: left;
+                        width: 100%;
+                        
                         li{
                             width: 100%;
                             padding: 20px;
@@ -109,11 +113,14 @@ body{
                                 width: 100%;
                                 text-transform: uppercase;
                                 padding: 20px;
-                                margin: 0;                               
+                                margin: 0;                              
                             }
                             a:hover{
                                 background-color: $secondary-color;
                             }
+                        }
+                        .home-link{
+                            display: none;
                         }
                         
                     }
