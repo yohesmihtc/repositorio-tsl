@@ -84,6 +84,7 @@ body .header .menu .navbar ul li a:hover {
     padding: 20px;
   }
   body .header .menu .logo {
+    background-color: #747C6C;
     width: 15%;
   }
   body .header .menu .logo img {
@@ -104,6 +105,8 @@ body .header .menu .navbar ul li a:hover {
   body .header .menu .navbar ul {
     display: flex;
     flex-direction: column;
+    text-align: left;
+    width: 100%;
   }
   body .header .menu .navbar ul li {
     width: 100%;
@@ -118,6 +121,9 @@ body .header .menu .navbar ul li a:hover {
   }
   body .header .menu .navbar ul li a:hover {
     background-color: #747C6C;
+  }
+  body .header .menu .navbar ul .home-link {
+    display: none;
   }
   body .header .menu #menu:checked ~ .navbar {
     display: initial;
@@ -302,6 +308,7 @@ body .home video {
   }
   body .home video {
     width: 68%;
+    margin: 10px;
   }
 }
 .sobre-nos .background-2 {
@@ -448,67 +455,84 @@ body .background-3 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 30px black;
 }
-body .section-bt {
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 100px;
-}
 body .acompanhamento-online {
-  margin: 0;
+  background-color: black;
+  padding: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 body .acompanhamento-online .modalidade {
-  margin: 20px 5;
-  color: #000000;
-  background-color: #4e5242;
-  padding: 40px;
-  border-radius: 50px;
-  box-shadow: 1px 1px 10px rgb(52, 50, 50);
+  width: 40%;
+  padding: 50px;
+  background-color: #081217;
+  color: white;
+  padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-body .acompanhamento-online .modalidade h2 {
+body .acompanhamento-online .modalidade h3 {
   background-color: #747C6C;
-  padding: 15px;
-  text-align: center;
+  color: black;
+  padding: 5px 20px;
 }
 body .acompanhamento-online .modalidade ul li {
   color: #d3d4d0;
+  font-weight: 500;
   margin: 0;
   padding: 10px 0;
 }
-body .acompanhamento-online .contenedor-carta {
+body .acompanhamento-online .section-bt {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+body .acompanhamento-online .section-bt .accordion .accordion-item .accordion-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  background-color: #747C6C;
+  color: #d3d4d0;
+  box-shadow: none;
+}
+body .acompanhamento-online .section-bt .accordion .accordion-item .accordion-collapse .accordion-body, body .acompanhamento-online .section-bt .accordion .accordion-item .collapse .accordion-body, body .acompanhamento-online .section-bt .accordion .accordion-item .show .accordion-body {
+  background-color: #d3d4d0;
+  color: black;
+}
+body .contenedor-carta {
+  background: url("../img/repeated-square-dark.png");
+  background-repeat: repeat;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
-body .acompanhamento-online .contenedor-carta .carta {
-  margin: 10px 40px;
-  display: inline-block;
+body .contenedor-carta .carta {
+  width: 30%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 1px 50px rgb(52, 50, 50);
 }
-body .acompanhamento-online .contenedor-carta .carta .carta-cuerpo {
+body .contenedor-carta .carta .carta-cuerpo {
   padding: 20px;
 }
-body .acompanhamento-online .contenedor-carta .carta .carta-cuerpo .boton {
+body .contenedor-carta .carta .carta-cuerpo h4 {
+  text-transform: uppercase;
+}
+body .contenedor-carta .carta .carta-cuerpo p {
+  text-transform: uppercase;
+}
+body .contenedor-carta .carta .carta-cuerpo .boton {
+  padding: 20px;
   background-color: #4e5242;
+  font-weight: 700;
   color: #d3d4d0;
   text-transform: uppercase;
-  box-shadow: 1px 1px 50px rgb(52, 50, 50);
 }
-body .acompanhamento-online .contenedor-carta .carta .carta-cuerpo .boton:hover {
-  background-color: #747C6C;
-  color: black;
+body .contenedor-carta .carta .carta-cuerpo .boton:hover {
+  background-color: black;
 }
 body .footer ul li a {
   text-decoration: none;
@@ -522,13 +546,17 @@ body .footer ul li a {
     font-size: 30px;
     margin: 100px 0 0 20px;
   }
-  body .acompanhamento-online .contenedor-carta {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
+  body .acompanhamento-online {
+    padding: 50px 10px;
   }
-  body .acompanhamento-online .contenedor-carta .carta {
-    margin: 10px 10px;
+  .contenedor-carta {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contenedor-carta .carta {
+    width: 80%;
+    margin: 10px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -536,23 +564,50 @@ body .footer ul li a {
     margin: 200px 0 0 20px;
     font-size: 20px;
   }
-  body .section-bt {
-    padding: 10px 10px;
-  }
   body .acompanhamento-online {
-    margin: 0 20px 5px;
+    background-color: #081217;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
   }
   body .acompanhamento-online .modalidade {
+    width: 100%;
+    padding: 0;
+  }
+  body .acompanhamento-online .modalidade h3 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  body .contenedor-carta {
+    margin: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  body .acompanhamento-online .modalidade h2 {
-    margin: 0 0 10px 0;
-    padding: 15px;
-  }
-  body .acompanhamento-online .contenedor-carta {
+  body .contenedor-carta .carta {
+    width: 80%;
+    margin: margin 20px;
     display: flex;
-    flex-direction: column;
+  }
+  body .contenedor-carta .carta .carta-cuerpo {
+    padding: 20px;
+  }
+  body .contenedor-carta .carta .carta-cuerpo h4 {
+    text-transform: uppercase;
+  }
+  body .contenedor-carta .carta .carta-cuerpo p {
+    text-transform: uppercase;
+  }
+  body .contenedor-carta .carta .carta-cuerpo .boton {
+    padding: 20px;
+    background-color: #4e5242;
+    color: #d3d4d0;
+    text-transform: uppercase;
+  }
+  body .contenedor-carta .carta .carta-cuerpo .boton:hover {
+    background-color: #747C6C;
+    color: black;
   }
 }
 body .background-4 {
@@ -869,7 +924,7 @@ body .container-inf form button:hover {
   }
 }
 body footer {
-  padding: 10px;
+  padding: 30px;
   background-color: #4e5242;
   color: #d3d4d0;
   display: flex;
