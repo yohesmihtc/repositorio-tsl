@@ -14,10 +14,9 @@ body{
         }
     }
     .acompanhamento-online{
-        background-color: #081217;
+        background-color: black;
         padding: 50px;
-        display: flex;
-        
+        display: flex;        
         .modalidade{
             width: 40%;
             padding: 50px;
@@ -26,10 +25,11 @@ body{
             padding: 10px; 
             display: flex;
             flex-direction: column;
-            align-items: center; 
+            
             h3{
+                
                 background-color: $secondary-color;
-                color: $white-color;
+                color: black;
                 padding: 5px 20px;
 
                 }
@@ -47,15 +47,9 @@ body{
             padding: 10px;
             font-size: 20px;
             font-weight: 400;
-            letter-spacing: 0.1em;
-            
-            .accordion{
-                
-                .accordion-item{
-                    
-                    .accordion-header{
-                       
-                    }
+            letter-spacing: 0.1em;            
+            .accordion{                
+                .accordion-item{                    
                     .accordion-button{
                         text-transform: uppercase;
                         font-weight: 600;
@@ -67,7 +61,7 @@ body{
                     }
                     .accordion-collapse, .collapse, .show{                    
                         .accordion-body{
-                            
+                            background-color: $white-color;
                             color: black;
     
                         }
@@ -76,25 +70,20 @@ body{
                 }
             }
         }
-    }
-    
+    }   
     .contenedor-carta{
         background: url('../img/repeated-square-dark.png');
         background-repeat: repeat;
         margin: 0;
-        padding: 20px;
+        padding: 20px 0;
         text-align: center;
-        @include flex;
+        display: flex;
         justify-content: space-around;
         .carta{
             width: 30%;
-            margin: margin 20px;
-            display: inline-block;
+            display: flex;
             justify-content: space-around;
             align-items: center;
-            .card-img-top{
-
-            }
             .carta-cuerpo{
                 padding: 20px;
                 h4{
@@ -108,12 +97,12 @@ body{
                 .boton{
                     padding: 20px;
                     background-color: $main-color;
+                    font-weight: 700;
                     color: $white-color;
                     text-transform: uppercase;
                 }
                 .boton:hover{
-                    background-color: #747C6C;
-                    color: black;                    
+                    background-color: black;                    
                 }                
             }
         }
@@ -128,51 +117,88 @@ body{
         }
     }
 }
+
+
 @media only screen and (max-width:960px){
-    body{
-        .background-3 {
-            min-height: 50vh;
+body{
+    .background-3 {
+        min-height: 50vh;
             h1{
                 font-size: 30px;
                 margin: 100px 0 0 20px;
             }
         }
-        .acompanhamento-online{
-            padding: 50px 10px;
+    .acompanhamento-online{
+        padding: 50px 10px;
         }
-
+    }
+    .contenedor-carta{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        .carta{
+            width: 80%;
+            margin: 10px;
+        }
     }
 }
 
 @media only screen and (max-width: 600px){
     body{
-        //PAGINA-ACOMPANHAMENTO ONLINE
         .background-3{
             h1{
                 margin:200px 0 0 20px;
                 font-size: 20px;
             }
         }
-        .section-bt{
-            margin: 0;
-            padding: 20px 0;
-        }
         .acompanhamento-online{
-            margin: 0;
+            background-color: #081217;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;      
             .modalidade{
-                display: flex;
-                flex-direction: column;
-                h2{
-                    margin: 0 0 10px 0;
-                    padding: 15px;
-
-                }
+                width: 100%;
+                padding: 0;
+                h3{
+                    font-size: 18px;
+                    padding: 10px;
+                    }
             }
-            
-        }
+        }  
         .contenedor-carta{
+            margin: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
+            align-items: center;
+    
+            .carta{
+                width: 80%;
+                margin: margin 20px;
+                display: flex;
+                .carta-cuerpo{
+                    padding: 20px;
+                    h4{
+                        text-transform: uppercase;
+    
+                    }
+                    p{
+                        text-transform: uppercase;
+    
+                    }
+                    .boton{
+                        padding: 20px;
+                        background-color: $main-color;
+                        color: $white-color;
+                        text-transform: uppercase;
+                    }
+                    .boton:hover{
+                        background-color: #747C6C;
+                        color: black;                    
+                    }                
+                }
+            }
         }
+        
     }
 }
