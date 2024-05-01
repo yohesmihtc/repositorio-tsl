@@ -96,13 +96,13 @@ body{
                 }
                 .boton{
                     padding: 20px;
-                    background-color: $main-color;
+                    background-image: linear-gradient(to left, $main-color, $secondary-color);
                     font-weight: 700;
                     color: $white-color;
                     text-transform: uppercase;
                 }
                 .boton:hover{
-                    background-color: black;                    
+                    background-image: linear-gradient(to right, #081217, black);                    
                 }                
             }
         }
