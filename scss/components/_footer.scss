@@ -1,13 +1,13 @@
 body{
     footer{ 
         padding: 30px;
-        background-color: #4e5242;
-        color: #d3d4d0;
+        background-color: $main-color;
+        color: $white-color;
         @include flex-column-center;
         ul{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             display: flex;
-            gap: 30px;
+            gap: 40px;
             li{ 
 
                 a{
@@ -22,12 +22,15 @@ body{
                 }
             }
         }
-
         p{
             padding: 0;
             margin: 0;
             font-size: 15px;
 
+        }
+        .web-dev{
+            margin-top: 10px;
+            font-size: 10px;
         }
     }
 }

@@ -946,9 +946,9 @@ body footer {
   align-items: center;
 }
 body footer ul {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 body footer ul li a {
   color: #d3d4d0;
@@ -963,6 +963,10 @@ body footer p {
   padding: 0;
   margin: 0;
   font-size: 15px;
+}
+body footer .web-dev {
+  margin-top: 10px;
+  font-size: 10px;
 }
 
 body {
