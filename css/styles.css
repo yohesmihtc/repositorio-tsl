@@ -884,6 +884,13 @@ body .container-inf form button {
 body .container-inf form button:hover {
   background: black;
 }
+body .container-inf form .success {
+  padding: 20px;
+  color: green;
+  font-weight: 700;
+  border: 2px solid green;
+  background-color: #d3d4d0;
+}
 
 @media only screen and (max-width: 960px) {
   body .background-5 {

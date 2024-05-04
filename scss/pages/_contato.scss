@@ -125,7 +125,16 @@ body{
             button:hover{
                 background: black;
             }
+            .success{
+                padding: 20px;
+                color: green;
+                font-weight: 700;
+                border: 2px solid green;
+                background-color: $white-color;
+
+            }
         }
+        
     }
     
 }
